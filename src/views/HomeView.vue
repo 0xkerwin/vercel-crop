@@ -99,6 +99,10 @@
 <script setup>
 import i18n from '../i18n'
 import { computed } from 'vue'
+import instagramIcon from '../assets/icons/instagram.svg'
+import twitterIcon from '../assets/icons/twitter.svg'
+import facebookIcon from '../assets/icons/facebook.svg'
+import linkedinIcon from '../assets/icons/linkedin.svg'
 
 // 获取翻译函数
 const $t = (key) => i18n.t.value(key)
@@ -109,7 +113,7 @@ const socialMediaPlatforms = computed(() => {
     {
       name: 'Instagram',
       icon: 'instagram',
-      iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/132px-Instagram_logo_2016.svg.png',
+      iconUrl: instagramIcon,
       profileSize: $t('home.socialMedia.platforms.0.profileSize'),
       postSize: $t('home.socialMedia.platforms.0.postSize'),
       description: $t('home.socialMedia.platforms.0.description')
@@ -117,7 +121,7 @@ const socialMediaPlatforms = computed(() => {
     {
       name: 'X (Twitter)',
       icon: 'twitter',
-      iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/X_logo_2023.svg/150px-X_logo_2023.svg.png',
+      iconUrl: twitterIcon,
       profileSize: $t('home.socialMedia.platforms.1.profileSize'),
       postSize: $t('home.socialMedia.platforms.1.postSize'),
       description: $t('home.socialMedia.platforms.1.description')
@@ -125,7 +129,7 @@ const socialMediaPlatforms = computed(() => {
     {
       name: 'Facebook',
       icon: 'facebook',
-      iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/150px-Facebook_Logo_%282019%29.png',
+      iconUrl: facebookIcon,
       profileSize: $t('home.socialMedia.platforms.2.profileSize'),
       postSize: $t('home.socialMedia.platforms.2.postSize'),
       description: $t('home.socialMedia.platforms.2.description')
@@ -133,7 +137,7 @@ const socialMediaPlatforms = computed(() => {
     {
       name: 'LinkedIn',
       icon: 'linkedin',
-      iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/150px-LinkedIn_logo_initials.png',
+      iconUrl: linkedinIcon,
       profileSize: $t('home.socialMedia.platforms.3.profileSize'),
       postSize: $t('home.socialMedia.platforms.3.postSize'),
       description: $t('home.socialMedia.platforms.3.description')
